@@ -25,5 +25,8 @@ def add_numbers(x: Union[int, float], y: Union[int, float]) -> Union[int, float]
     return result
 
 if __name__ == "__main__":
-    # Run the server
-    mcp.run()
+    import os
+    # Get port from environment (Render provides this)
+    port = int(os.environ.get("PORT", 8000))
+    # Run the server on the specified port
+    mcp.run(port=port, host="0.0.0.0")
