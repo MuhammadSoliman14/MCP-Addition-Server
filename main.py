@@ -1,4 +1,3 @@
-'#!/usr/bin/env python3
 """ Simple MCP server using FastMCP that adds two numbers """
 
 from fastmcp import FastMCP
